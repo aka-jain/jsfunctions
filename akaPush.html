@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			akaPush()
+		</title>
+
+		<script>
+
+	//  <!-- defining function for push -->
+	
+
+Array.prototype.akaPush=function(value){
+
+var len = this.length;
+  this[len] = value;
+  len++;
+  this.length = len;
+  return len;
+}
+
+
+
+var a=[];
+
+
+	a.akaPush(5);
+	a.akaPush(10);
+	a.akaPush(12);
+	a.akaPush(1);
+	console.log(a)</script> <!-- including link for js file -->
+		</head>
+		<body>
+
+
+
+			Check it in console!
+
+
+
+
+		</body>
+</html>
