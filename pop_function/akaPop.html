@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			akaPush()
+		</title>
+
+		<script>
+
+	//  <!-- defining function for push -->
+	
+
+Array.prototype.akaPop=function(){
+	if(this.length>0){
+		var len = this.length;
+			len--;
+			this.length = len;
+			return len;
+	}
+	else{
+		console.log("Array is empty")
+	}
+}
+
+var a=[1,2,3,4];
+
+	console.log("Befor Poping array is "+ a)
+
+	a.akaPop();
+	a.akaPop();
+	a.akaPop();
+
+	
+	console.log("After Poping 3 times array is "+ a)</script> <!-- including link for js file -->
+		</head>
+		<body>
+
+
+
+			Check it in console!
+
+
+
+
+		</body>
+</html>
