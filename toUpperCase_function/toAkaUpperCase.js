@@ -1,5 +1,5 @@
 
-String.prototype.toAkkaUpperCase = function() {
+String.prototype.toAkaUpperCase = function() {
 
 	var integer=0,i;
 	var newString="";

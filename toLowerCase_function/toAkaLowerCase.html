@@ -1,6 +1,6 @@
 <html>
 
-<title>toAkaUpperCase()</title>
+<title>toAkaLowerCase()</title>
 	<head>
 	</head>
 <body>
@@ -12,7 +12,7 @@
 			<br><br><br><br><br><br>
 		 
 
-				 Yup Sure! Use my function toAkaUpperCase to change into UpperCase.
+				 Yup Sure! Use my function toAkaLowerCase to change into LowerCase.
 
 
 			<br><br><br><br><br><br>
@@ -23,7 +23,7 @@
 <script>
 
 // original string==============
-	var before="<b>Hi Akash! WIll you please convert me into Capital letters... Please</b>";
+	var before="<b>HI AKASH! WILL YOU PLEASE CONVERT ME INTO CAPITAL LETTERS</b>";
 	
 
 // adding to DOM===============
@@ -31,9 +31,9 @@
 
 
 
-// toAkaUpperCase function implementation which returns new string==============
+// toAkkaUpperCase function implementation which returns new string==============
 
-	String.prototype.toAkaUpperCase = function() {
+	String.prototype.toAkaLowerCase = function() {
 
 		var integer=0,i;
 		var newString="";
@@ -42,8 +42,8 @@
 
 			var integer = this.charCodeAt(i);
 
-			if(integer>=97 && integer<=122){
-				integer=integer-32;
+			if(integer>=65 && integer<=90){
+				integer=integer+32;
 				newString=newString+String.fromCharCode(integer);
 			}
 			else{
@@ -56,9 +56,9 @@
 	};
 
 
-// storing into new string by using a function toAkaUpperCase which is an object of string Class======================
+// storing into new string by using a function toAkkaUpperCase which is an object of string Class======================
 
-	var after=before.toAkaUpperCase();
+	var after=before.toAkaLowerCase();
 
 // adding Capitalized string to DOM=====================
 
