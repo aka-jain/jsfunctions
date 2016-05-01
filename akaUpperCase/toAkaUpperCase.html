@@ -1,0 +1,71 @@
+<html>
+
+<title>toAkkaUpperCase()</title>
+	<head>
+	</head>
+<body>
+
+
+		<div id="before">
+		</div>
+
+			<br><br><br><br><br><br>
+		 
+
+				 Yup Sure! Use my function toAkkaUpperCase to change into UpperCase.
+
+
+			<br><br><br><br><br><br>
+
+		<div id="after">
+		</div>
+
+<script>
+
+// original string==============
+	var before="<b>Hi Akash! WIll you please convert me into Capital letters... Please</b>";
+	
+
+// adding to DOM===============
+	document.getElementById('before').innerHTML=before;
+
+
+
+// toAkkaUpperCase function implementation which returns new string==============
+
+	String.prototype.toAkkaUpperCase = function() {
+
+		var integer=0,i;
+		var newString="";
+
+		for(i=0;i<this.length;i++){
+
+			var integer = this.charCodeAt(i);
+
+			if(integer>=97 && integer<=122){
+				integer=integer-32;
+				newString=newString+String.fromCharCode(integer);
+			}
+			else{
+				newString=newString+String.fromCharCode(integer);
+			}
+		}
+
+		return newString;
+
+	};
+
+
+// storing into new string by using a function toAkkaUpperCase which is an object of string Class======================
+
+	var after=before.toAkkaUpperCase();
+
+// adding Capitalized string to DOM=====================
+
+	document.getElementById('after').innerHTML=after;
+
+</script>
+</body>
+
+</html>
+
