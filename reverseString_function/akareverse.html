@@ -1,0 +1,60 @@
+<html>
+
+<title>akaReverseString()</title>
+	<head>
+	</head>
+<body>
+
+
+		<div id="before">
+		</div>
+
+			<br><br><br><br><br><br>
+		 
+
+				 Yup Sure! Use my function akaReverseString to change into reverse String.
+
+
+			<br><br><br><br><br><br>
+
+		<div id="after">
+		</div>
+
+<script>
+
+// original string==============
+	var before="Hi bro! I'm going to reverse myself";
+	
+
+// adding to DOM===============
+	document.getElementById('before').innerHTML=before;
+
+
+
+// akaReverseString function implementation which returns new string==============
+
+String.prototype.akaReverseString=function  () {
+	
+	var rev="";
+
+	for (i=this.length-1;i>=0;i--){
+		rev=rev+this[i];
+	}
+	return rev;
+
+}
+
+
+
+// storing into new string by using a function akaReverseString which is an object of string Class======================
+
+	var after=before.akaReverseString();
+
+// adding Capitalized string to DOM=====================
+
+	document.getElementById('after').innerHTML=after;
+
+</script>
+</body>
+
+</html>

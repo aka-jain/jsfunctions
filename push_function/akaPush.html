@@ -5,25 +5,16 @@
 		</title>
 
 		<script>
-
 	//  <!-- defining function for push -->
 	
-
 Array.prototype.akaPush=function(value){
-
 var len = this.length;
   this[len] = value;
   len++;
   this.length = len;
   return len;
 }
-
-
-
-
-
 var a=[3];
-
 console.log("Array before push "+ a)
 	a.akaPush(5);
 	a.akaPush(10);
